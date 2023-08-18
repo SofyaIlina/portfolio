@@ -1,0 +1,15 @@
+mixin projects()
+  .projects
+    //- вставлять блоки во внешний контейнер неверно
+    //- все блоки содержат в себе container без доп класса tutorial__wrapper
+    .container
+      h1.projects__title Портфолио
+      h2.projects__subtitle Проекты
+      ul.projects__list
+        +projects-card("Supergym", "supergym", "projects", "supergym", "png", 426, 296, "Макет сайта Supergym")
+        +projects-card("Drink2Go", "drink2go", "projects", "drink2go", "png", 426, 296, "Макет сайта Drink2Go")
+        +projects-card("Antarctic Cruises", "AntarcticCruises", "projects", "antarctic-cruises", "png", 426, 296, "Макет сайта Antarctic Cruises")
+        +projects-card("Smart Device", "SmartDevice", "projects", "smart-device", "png", 426, 296, "Макет сайта Smart Device")
+        +projects-card("Keksobooking", "1747261-keksobooking-27", "projects", "keksobooking", "png", 426, 296, "Макет сайта Keksobooking")
+
+

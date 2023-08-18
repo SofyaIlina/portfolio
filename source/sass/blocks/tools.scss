@@ -1,0 +1,31 @@
+.tools {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tools {
+  margin: 0;
+}
+
+.tools__element {
+  color: $color-main-second;
+  margin: 0;
+  padding: 5px 14px;
+  border-radius: 8px;
+  background-color: $color-bg;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  &--online {
+    color: $color-tool-online;
+    background: $color-bg-tool-online;
+
+    &:hover {
+      box-shadow: 0 0 5px 1px $color-tool-online;
+    }
+  }
+}

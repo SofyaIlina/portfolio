@@ -1,0 +1,34 @@
+.projects-card {
+  border: 1px solid $color-border-card;
+  border-radius: 16px;
+  padding: 32px 42px;
+
+  &:hover {
+    transform: scale(1.04);
+    transition: $trans-default;
+  }
+}
+
+.projects-card__title {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.projects-card__img {
+  img {
+    display: block;
+    margin: 32px 0;
+    border-radius: 8px;
+  }
+}
+
+.projects-card__link {
+  width: 50%;
+
+  &:hover {
+    box-shadow: 0 0 5px 1px $color-main-second;
+    transition: $trans-default;
+  }
+}

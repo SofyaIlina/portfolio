@@ -1,0 +1,11 @@
+mixin projects-card(cardTitle, projectName, path, image, format, width, height, altText)
+  li.projects-card
+    h3.projects-card__title= cardTitle
+    ul.projects-card__lang-list.tools
+      li.tools__element.tools__element--html-css HTML/SASS
+      li.tools__element JavaScript
+    .projects-card__img
+      img(src="img/" + path + "/" + image + "." + format, srcset= "img/" + path + "/" + image + "@2x." + format + " 2x", width= width, height= height, alt= altText)
+    .projects-card__links.tools
+      a.projects-card__link.tools__element.tools__element--online(href="https://sofyailina.github.io/" + projectName) Online
+      a.projects-card__link.tools__element(href="https://github.com/SofyaIlina/" + projectName) GitHub

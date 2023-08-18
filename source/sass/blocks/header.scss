@@ -1,0 +1,16 @@
+.header {
+  padding: 15px 0;
+
+  background-color: transparent;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: $color-default-white;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
