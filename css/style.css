@@ -1664,8 +1664,7 @@ button,
   left: 9px;
   width: 20px;
   height: 20px;
-  -webkit-mask: url("../img/stack.svg#icon-projects");
-  mask: url("../img/stack.svg#icon-projects");
+  background: url("../img/emojis/chain.png") no-repeat;
 }
 
 .projects__subtitle {
