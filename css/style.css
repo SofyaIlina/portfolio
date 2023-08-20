@@ -624,7 +624,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 50px 100px 142px;
 }
@@ -1678,12 +1678,13 @@ button,
 .projects__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   -ms-grid-row-align: stretch;
   align-self: stretch;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-  gap: 4%;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 55px;
 }
 
 .projects-card {
@@ -1802,6 +1803,12 @@ button,
   }
 */
 
+@media (max-width: 1439px) {
+  .projects__list {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 50px;
@@ -1809,6 +1816,7 @@ button,
 
   .projects__list {
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 40px;
   }
 
   .tools__element {
@@ -1818,7 +1826,7 @@ button,
 
 @media (max-width: 767px) {
   .container {
-    padding: 50px 15px;
+    padding: 70px 15px;
   }
 
   .modal__wrapper {
@@ -1834,8 +1842,19 @@ button,
     width: 100%;
   }
 
+  .projects .container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .projects__subtitle {
+    margin-bottom: 35px;
+  }
+
   .projects__list {
     grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 50px 15px;
   }
 
   .projects-card {
