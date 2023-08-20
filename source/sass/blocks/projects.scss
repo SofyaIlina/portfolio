@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include vp-767 {
+    align-items: center;
+  }
 }
 
 .projects__title {
@@ -22,7 +26,7 @@
     left: 9px;
     width: 20px;
     height: 20px;
-    background: url('../../img/stack/icon-projects.svg') no-repeat;
+    background: url("../img/emojis/chain.png") no-repeat;
   }
 }
 
@@ -32,12 +36,32 @@
   line-height: 60px;
   margin: 0;
   margin-bottom: 100px;
+
+  @include vp-767 {
+    margin-bottom: 35px;
+  }
 }
 
 .projects__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  align-self: stretch;
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 55px;
-  grid-template-columns: repeat(3, auto);
+
+  @include vp-1439 {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+
+  @include vp-1023 {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    gap: 50px 15px;
+  }
 }
